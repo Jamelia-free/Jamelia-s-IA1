@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Jamelia's  Digital  Garden</title>
+    <link rel="icon" type="image/png" href="../Assets/favicon.png">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Almendra+SC&family=Festive&family=Poltawski+Nowy:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=MonteCarlo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montagu+Slab:opsz,wght@16..144,100..700&display=swap" rel="stylesheet">
+    <style>
+      .bookmark-highlight {
+        animation: bookmarkPulse 2s ease-out;
+        border-radius: 10px;
+        box-shadow: 0 0 0 0 rgba(var(--color-bookmark-highlight-rgb), 0.7);
+      }
+
+      @keyframes bookmarkPulse {
+        0% {
+          background-color: rgba(var(--color-bookmark-highlight-rgb), 0.45);
+          box-shadow: 0 0 0 0 rgba(var(--color-bookmark-highlight-rgb), 0.7);
+        }
+        25% {
+          background-color: rgba(var(--color-bookmark-highlight-rgb), 0.7);
+          box-shadow: 0 0 0 10px rgba(var(--color-bookmark-highlight-rgb), 0.25);
+        }
+        100% {
+          background-color: transparent;
+          box-shadow: 0 0 0 0 rgba(var(--color-bookmark-highlight-rgb), 0);
+        }
+      }
+    </style>
+    <script>
+      function highlightBookmark(targetId) {
+        const target = document.getElementById(targetId);
+        if (!target) return;
+
+        target.classList.remove('bookmark-highlight');
+        void target.offsetWidth;
+        target.classList.add('bookmark-highlight');
+
+        setTimeout(() => {
+          target.classList.remove('bookmark-highlight');
+        }, 2000);
+      }
+
+      function handleHashNavigation() {
+        const hash = window.location.hash.replace('#', '');
+        if (hash) {
+          highlightBookmark(hash);
+        }
+      }
+
+      window.addEventListener('DOMContentLoaded', handleHashNavigation);
+      window.addEventListener('hashchange', handleHashNavigation);
+    </script>
+  </head>
+
+  <body class="home-body">
+    <header>
+      <img class="logo" src="../Assets/favicon.png" alt="logo">
+      <h1>JAMELIA'S DIGITAL GARDEN </h1>
+    </header>
+    <nav class="navbar">
+      <ul>
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li> <a
+          href="Professional.html">Professional</a>
+        </li>
+        <li> <a
+          href="Personality.html">Personality</a>
+        </li>
+        <li> <a
+          href="PersonalDev.html">Personal Development</a>
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <h2>In this section we will be analyzing the book "The Richest Man in Babylon"</h2>
+      <h3>Specifically:</h3>
+      <ul>
+        <li><a href="#7Cures">7 Cures for a Lean Purse</a></li>
+        <li><a href="#5Laws">5 Laws of Gold</a></li>
+      </ul>
+      <a href="https://icrrd.com/public/media/16-05-2021-070111The-Richest-Man-in-Babylon.pdf" target="_blank">
+        Click here for the full book!
+      </a>
+      <br>
+      <h2>Reflection</h2>
+      <div style="background-color: var(--color-soft-lilac); border-radius: 10px;"> 
+        In The Richest Man in Babylon George S. Clason tells the people of Babylon how to escape poverty and create lasting wealth. Arkad is used as a teacher, the Seven Cures for a Purse and Five Laws of Gold give clear lessons about saving, spending, investing and preparing for the future. These lessons are especially useful for me as a college student because my allowance is my source of income. Learning how to manage allowance now can help me build financial habits for later.
+        <br>
+        <p id="7Cures">
+        Arkad wasn't the smartest man in Babylon, he was just the most disciplined for the longest time. He didn't wait until he was rich to start acting rich instead he acted like a rich man when he was poor and eventually he became rich. The first cure "Start thy purse to fattening " tells me to save at least ten percent of everything I receive. Since allowance is my earning I can set aside ten percent before spending the rest and learn to live on ninety percent. The second cure, "Control thy expenditures " teaches me to separate needs from wants and make a budget as Arkad says our "necessary expenses" will always grow to eat our entire income unless we control it. The third cure "Make thy gold multiply " encourages me to invest my savings so that money can grow instead of sitting idly. The fourth cure "Guard thy treasures from loss " reminds me to protect money by investing in things I understand and by asking advice from knowledgeable people. This is important because social media has “get rich quick” schemes that promise unrealistic returns. The fifth cure, "Make of thy dwelling a profitable investment " reminds me to live within my means when it comes to housing. If I am paying rent I should choose a place that I can afford instead of an expensive place that does the same as a more affordable one. The sixth cure "Insure a future income " tells me to think beyond the present by building savings, preparing for emergencies and planning for the future. The seventh cure, "Increase thy ability to earn " encourages me to improve education, skills and knowledge so I can raise my earning potential. As a college student, education is an investment in my future.
+        </p>
+        <br>
+        <p id="5Laws">
+        In “Five Laws of Gold,” narrated through the story of Arkad’s son Nomasir, illustrates how trial and error leads to financial maturity. Nomasir initially loses his father's gold to bad investments and deceptive schemes because he lacks experience. However, by adhering to five key principles etched on a clay tablet, he recovers his fortune. The first law says that gold comes to those who save at least one‑tenth of their earnings, reminding me to save part of  my allowance consistently. The second law says that gold works for the owner meaning I should eventually put savings to productive use through wise investments. The third law teaches that gold stays with those who invest through people so I should seek advice from people who have real financial knowledge and experience. The fourth law warns that gold leaves those who invest in things they do not understand, reminding me to research before investing. The fifth law explains that gold flees from those who chase returns or listen to tricksters warning me to avoid scams and unrealistic promises.
+        </p>
+        <br>
+        My biggest takeaway from The Richest Man in Babylon is that "Opportunity is a haughty goddess who wastes no time with such as are unprepared." While many people attribute financial success to sheer luck, Clason’s parables demonstrate that good fortune is simply the intersection of preparation and decisive action. Lucky breaks and profitable ventures present themselves to everyone, but those who procrastinate, carry heavy debts or lack saved capital are incapable of acting when opportunity strikes. By maintaining financial discipline, keeping expenses low and continuously sharpening my skills, especially during my college years, is positioning me to capitalize on rare career, investment or business opportunities the moment they appear.
+      </div>
+    </main>
+  </body>
+</html>

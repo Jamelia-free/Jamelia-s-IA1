@@ -1,0 +1,201 @@
+:root {
+  --color-primary: #af4bce;
+  --color-accent: #d33de7;
+  --color-muted-purple: #a467a4;
+  --color-soft-lilac: #e59cf4;
+  --color-ink: #0b090b;
+  --color-primary-border: rgba(175, 75, 206, 0.5);
+  --color-primary-hover: rgba(175, 75, 206, 0.2);
+  --color-bookmark-highlight-rgb: 255, 215, 0;
+  --color-personality-card: rgba(229, 156, 244, 0.527);
+
+  --font-display: "Almendra SC", serif;
+  --font-heading: "Montagu Slab", serif;
+  --font-script: "MonteCarlo", cursive;
+  --font-body: "Times New Roman", serif;
+
+  --font-weight-root: 400;
+}
+
+body {
+  font-family: var(--font-body);
+  font-weight: var(--font-weight-root);
+}
+
+header{
+  display:flex;
+  align-items:center;
+  gap: 50px;
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px;
+}
+.logo{
+  width: 100px;
+  height: 100px;
+}
+.navbar ul{
+    list-style-type: none;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: left;
+    gap: 8px;
+    font-family: var(--font-heading);
+
+}
+.navbar li{
+  float: left;
+}
+.navbar a{
+  text-decoration: none;
+  padding: 15px;
+  display: block;
+  text-align: center;
+  color: var(--color-primary);
+  font-size: 20px;
+  border: 1px solid var(--color-primary-border);
+  border-radius: 6px;
+}
+
+.navbar a:hover{
+  text-decoration: underline;
+  background-color: var(--color-primary-hover);
+}
+.home-content{
+  text-align: center;
+  margin-top: 100px;
+}
+.home-content h2{
+  font-family: var(--font-script);
+  font-weight: 400;
+  font-size: 60px;
+  font-style: normal;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  color: var(--color-primary);
+}
+.home-content h3{
+   font-family: var(--font-heading);
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-size: 70px;
+  font-style: normal;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: var(--color-accent);
+}
+.home-content p{
+  font-family: var(--font-body);
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  margin-top: 0;
+  color: var(--color-primary);
+}
+.flower-divider {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin: 25px 0;
+}
+.flower-divider span {
+  width: 70px;
+  height: 1.5px;
+  display: block;
+  background-color: var(--color-accent);
+}
+.home-body{
+  background-image: url("Assets/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+body{
+  background-image: url("Assets/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+h2{
+  font-family: var(--font-heading);
+  font-optical-sizing: auto;
+  text-align: center;
+  font-size: 60px;
+}
+h3{
+  font-family: var(--font-heading);
+  font-optical-sizing: auto;
+  text-align: center;
+  font-size: 50px;
+}
+h4{
+  text-align: left;
+  font-weight: bold;
+  font-size: 30px;
+}
+.academic-record{
+  max-width: 600px;
+  margin: 0 auto;
+}
+.academic-record-item{
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+.entry{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+hr{
+  border: none;
+  height: 1px;
+  background-color: var(--color-ink);
+  margin: 20px 0;
+}
+
+.personality{
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+  background-color: var(--color-personality-card);
+  border-radius: 10px;
+}
+
+.essay-columns {
+  display: flex;
+  gap: 40px;
+  padding: 20px;
+  background-color: var(--color-personality-card);
+  border-radius: 10px;
+}
+
+.essay-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.essay-column p {
+  margin: 0;
+  text-align: justify;
+}
+
+.trait-image{
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
